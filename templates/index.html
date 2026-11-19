@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ config.title }}</h1>
+  <p>{{ config.description }}</p>
+  <ul>
+    {% for page in section.pages %}
+      <li>
+        <small>{{ page.date }}</small> —
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock content %}
