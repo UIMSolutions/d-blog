@@ -1,0 +1,10 @@
+base_url = "https://<DEIN-USERNAME>.github.io/dlang-blog/"
+title = "Dlang Notes"
+description = "Artikel zu D (Dlang), Systemprogrammierung und Software-Architektur"
+default_language = "de"
+compile_sass = false
+build_search_index = false
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
