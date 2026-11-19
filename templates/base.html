@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{{ config.base_url }}"><strong>{{ config.title }}</strong></a></li>
+        </ul>
+      </nav>
+    </header>
+    {% block content %}{% endblock content %}
+  </main>
+</body>
+</html>
